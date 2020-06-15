@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books>
+    <book>
+        <name>Title 1.1.1 - files/sub1/file-sub1-1.xml</name>
+        <author>Author 1.1</author>
+    </book>
+    <book>
+        <name>Title 1.1.2 - files/sub1/file-sub1-1.xml</name>
+        <author>Author 1.2</author>
+    </book>
+</books>

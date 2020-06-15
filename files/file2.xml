@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books>
+    <!-- Two duplicate records -->
+    <book>
+        <name>Title 2.1 - files/file2.xml</name>
+        <author>Author 2.1</author>
+    </book>
+    <book>
+        <name>Title 2.1 - files/file2.xml</name>
+        <author>Author 2.1</author>
+    </book>
+    <!-- END -->
+    <!-- Record without a name -->
+    <book>
+        <author>Author 2.4</author>
+    </book>
+    <!-- Record with Cyrillic symbols -->
+    <book>
+        <name>Заглавие 2.2 - files/file2.xml</name>
+        <author>Author 2.2</author>
+    </book>
+    <!-- Record with Japanese symbols -->
+    <book>
+        <name>題名 2.3 - files/file2.xml</name>
+        <author>Author 2.3</author>
+    </book>
+    <!-- Record with Korean symbols -->
+    <book>
+        <name>표제 2.4 - files/file2.xml</name>
+        <author>Author 2.4</author>
+    </book>
+</books>

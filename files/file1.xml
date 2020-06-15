@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books>
+    <book>
+        <name>Title 1.1 - files/file1.xml</name>
+        <author>Author 1.1</author>
+    </book>
+    <book>
+        <name>Title 1.2 - files/file1.xml</name>
+        <author>Author 1.2</author>
+    </book>
+    <book>
+        <name>Title 1.3 - files/file1.xml</name>
+        <author>Автор 1.3</author>
+    </book>
+    <book>
+        <name>Title 1.4 - files/file1.xml</name>
+        <author>Author 1.4</author>
+    </book>
+    <book>
+        <name>Title 1.4 - files/file1.xml</name>
+        <author>author 1.4</author>
+    </book>
+</books>
