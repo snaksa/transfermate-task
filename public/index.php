@@ -8,11 +8,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     require_once '../src/Entity/BookRepository.php';
 
     $searchText = $_POST['searchText'];
-    $searchText = strtolower($searchText ? trim($searchText) : '');
+    $searchText = $searchText ? trim($searchText) : '';
 
     // fetch records
     $bookRepository = new BookRepository($dbConfig);
-    $books = $bookRepository->search("LOWER(author) LIKE :searchText", ['searchText' => "%{$searchText}%"]);
+    $books = $bookRepository->search("LOWER(author) LIKE LOWER(:searchText)", ['searchText' => "%{$searchText}%"]);
 
     // generate table
     $table = '<table border="1">

@@ -57,9 +57,9 @@ function findDuplicates(array $records, BookRepository $bookRepository)
     $count = 1;
     foreach ($records as $key => $record) {
         echo "$record\n";
-        $whereClauses[] = "(LOWER(title) = :title{$count} AND LOWER(author) = :author{$count} AND file = :file{$count})";
-        $params[":title{$count}"] = strtolower($record->getTitle());
-        $params[":author{$count}"] = strtolower($record->getAuthor());
+        $whereClauses[] = "(LOWER(title) = LOWER(:title{$count}) AND LOWER(author) = LOWER(:author{$count}) AND file = :file{$count})";
+        $params[":title{$count}"] = $record->getTitle();
+        $params[":author{$count}"] = $record->getAuthor();
         $params[":file{$count}"] = $record->getFile();
 
         $count++;
